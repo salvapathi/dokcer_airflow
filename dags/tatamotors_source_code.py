@@ -1,4 +1,4 @@
-import os #
+import os 
 dependies_path="/opt/airflow/scripts_python"
 os.chdir(dependies_path)
 exec(open("/opt/airflow/scripts_python/tatamotors_dependies.py").read()) #running dependices files
