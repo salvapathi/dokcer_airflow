@@ -1,12 +1,12 @@
 import os 
 dependies_path="/opt/airflow/scripts_python"
 os.chdir(dependies_path)
-exec(open("/opt/airflow/scripts_python/tatamotors_dependies.py").read())
+exec(open("/opt/airflow/scripts_python/tatamotors_dependies.py").read()) #running dependices files
 dag = DAG(
     "Tatamotors_share_source",
     default_args={
         "owner": "salvapathi_Naidu",
-        "start_date": airflow.utils.dates.days_ago(1),  # Set the start date to one day ago
+        "start_date": airflow.utils.dates.days_ago(1), 
     },
     schedule_interval="@daily",
 )
